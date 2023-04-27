@@ -1,125 +1,87 @@
-html {
-    
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-.container{
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font: inherit;
-  font-family: 'Poppins', sans-serif;
-  vertical-align: baseline;
-}
-.principal-area{
-  background-color: #51B1C0;
-  height: 300px;
-}
-
-.header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color:  #FFFFFF;
-}
-
-.header h1 {
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.header h3 {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-.main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 150px;
-  color: #FFFFFF;
-}
-
-.input-area{
-  padding-top: 60px;
-  padding-bottom: 70px;
-}
-
-.input-area label {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.input-area input {
-  border-radius: 2px;
-  border: none;
-  width: 50px;
-  height: 20px;
-}
-.input-area input:focus{
-  outline: 0;
-}
-.input-area input::-webkit-outer-spin-button,
-.input-area input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+/* Reset de Estilos */
+* {
     margin: 0;
-}
-
-
-
-.btn-calc{
-  background-color:  #FFFFFF;
-  color:#51B1C0;
-  border: none;
-  border-radius: 3px;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px; 
-  width: 200px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.res-area-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #FFFFFF;
-  height: 54.6vh;
-}
-
-.res-area-text h4{
-  color: #51B1C0;
-  font-weight: 500;
-  font-size: 20px; 
-}
-.res-area-text .error-msg{
-  color: red;
-}
-.res-area-text h3 {
-  color: #51B1C0;
-  margin-top: 5px;
-  font-size: 20px; 
-  font-weight: bold;
-}
-.res-area-img img{
-  height: 180px;
-  width: 90px;
-}
- .footer {
-  height: 20px;
-  background-color: #51B1C0;
-} 
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    font-weight: bold;
+  }
+  
+  /* Estilos do conteúdo principal */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  a.btn:hover {
+    background-color: #555;
+  }
+  
+  .alimentos{
+    text-align: center;
+    padding: 8%;
+  }
 
-
-
+  .titulo{
+    padding: 3%;
+  }
