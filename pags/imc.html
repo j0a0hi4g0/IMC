@@ -2,22 +2,79 @@
 <html>
   <head>
     <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/imc.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Calculadora de IMC</h1>
-      <div class="input-wrapper">
-        <label for="peso">Peso (em kg): </label>
-        <input type="number" id="peso" />
+    <header>
+          <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+
+          <li><a href="../pags/imc.html">calculadora</a></li>
+          <li><a href="../pags/princ.html">principal fatores</a></li>
+          <li><a href="../pags/beneficios.html">Benefícios de uma boa alimentacao</a></li>
+          <li><a href="../pags/perigos.html">Perigos do Fast Food</a></li>
+
+        </nav>
+    </header>
+    <main>
+
+    
+  
+  
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Calculadora de IMC</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+          <div class="container">
+            <h1>Calculadora de IMC</h1>
+            <div class="input-wrapper">
+              <label for="idade">Idade:</label>
+              <select id="idade" onchange="selecionarCalculadora()">
+                <option value="adulto">Adulto</option>
+                <option value="idoso">Idoso</option>
+              </select>
+            </div>
+            <div class="input-wrapper">
+              <label for="peso">Peso (em kg):</label>
+              <input type="number" id="peso" />
+            </div>
+            <div class="input-wrapper">
+              <label for="altura">Altura (em metros):</label>
+              <input type="number" id="altura" />
+            </div>
+            <button onclick="calcularIMC()">Calcular</button>
+            <div id="resultado"></div>
+          </div>
+          <script src="../js/imc.js"></script>
+        </body>
+      </html>
+      
+    <section>
+      <h2>O que é IMC</h2>
+      <div class="alimentos">
+        <img src="../img/imc.jpeg" alt="" width="40%">
       </div>
-      <div class="input-wrapper">
-        <label for="altura">Altura (em metros): </label>
-        <input type="number" id="altura" />
-      </div>
-      <button onclick="calcularIMC()">Calcular</button>
-      <div id="resultado"></div>
-    </div>
-    <script src="../js/imc.js"></script>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <p>O IMC é um índice que mede se você está abaixo, dentro ou acima do peso, de acordo com a relação entre seu peso e altura. Descubra como calcular esse índice, quais os valores ideais, as exceções da tabela padrão, a especificidade do IMC para crianças e jovens e muito mais neste artigo completo.</p>
+    <p>Para a sua posição na tabela do Índice de Massa Corporal, você precisa de dois valores: seu peso e altura. É só dividir o peso (em quilos) pelo quadrado da altura (em metros), que é obtido pela multiplicação da altura por ela mesma</p>
+  <p>Então, a fórmula fica assim: IMC = Peso / Altura².</p>  
+  </section>
+  
+  
+
+  </main>
+    
+</body>
+</html>
+
   </body>
 </html>
